@@ -51,88 +51,9 @@
 - **AutoMapper**: Veri transfer nesnelerinin (DTO) otomatik eşlenmesi 
 
   
-
-## 5. Klasör Yapısı 
-
-``` 
-
-LibraryManagementSystem 
-
-│ 
-
-├───LibraryManagementSystem.API 
-
-│   ├───Controllers 
-
-│   ├───Models 
-
-│   ├───Configurations 
-
-│   ├───Program.cs 
-
-│   ├───Startup.cs 
-
-│   └───appsettings.json 
-
-│ 
-
-├───LibraryManagementSystem.Application 
-
-│   ├───Services 
-
-│   ├───Interfaces 
-
-│   ├───Exceptions 
-
-│   └───Mappings 
-
-│ 
-
-├───LibraryManagementSystem.Domain 
-
-│   ├───Entities 
-
-│   ├───Interfaces 
-
-│   └───Enums 
-
-│ 
-
-├───LibraryManagementSystem.Infrastructure 
-
-│   ├───Data 
-
-│   ├───Repositories 
-
-│   ├───Services 
-
-│   ├───Configurations 
-
-│   └───Helpers 
-
-│ 
-
-├───LibraryManagementSystem.Tests 
-
-│   ├───UnitTests 
-
-│   └───IntegrationTests 
-
-│ 
-
-├───LibraryManagementSystem.ConsoleApp (Opsiyonel) 
-
-│   └───Program.cs 
-
-│ 
-
-└───LibraryManagementSystem.sln 
-
-``` 
-
   
 
-## 6. Veritabanı Tasarımı 
+## 5. Veritabanı Tasarımı 
 
 ### Tablolar 
 
@@ -202,7 +123,7 @@ LibraryManagementSystem
 
   
 
-## 7. API Uç Noktaları 
+## 6. API Uç Noktaları 
 
 ### BooksController 
 
@@ -254,7 +175,7 @@ LibraryManagementSystem
 
   
 
-## 8. Geliştirme Süreci 
+## 7. Geliştirme Süreci 
 
 ### 1. Adım: Proje Kurulumu 
 
@@ -317,32 +238,6 @@ LibraryManagementSystem
 - Kimlik doğrulama ve yetkilendirme işlemlerini ekleyin. 
 
   
-
-### 7. Adım: Testler 
-
-- Birim testlerini yazın. 
-
-- Entegrasyon testlerini yazın. 
-
-- Testleri çalıştırın ve sonuçları gözden geçirin. 
-
-  
-
-## 9. Test Planı 
-
-### Birim Testleri 
-
-- BookService, UserService, LoanService, AuthService için birim testleri yazın. 
-
-- Her servisin tüm metodlarını test edin. 
-
-  
-
-### Entegrasyon Testleri 
-
-- BooksController, UsersController, LoansController, AuthController için entegrasyon testleri yazın. 
-
-- Tüm API uç noktalarını test edin. 
 
   
 
