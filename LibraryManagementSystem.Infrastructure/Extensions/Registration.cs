@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibraryManagementSystem.Domain.Entities.Identity;
 using LibraryManagementSystem.Domain.Interfaces;
 using LibraryManagementSystem.Infrastructure.Data;
 using LibraryManagementSystem.Infrastructure.Repositories;
@@ -26,9 +27,12 @@ namespace LibraryManagementSystem.Infrastructure.Extensions
                 });
             });
 
+
+            services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<LibraryContext>();
+
+
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IBookRepository, BookRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ILoanRepository, LoanRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
 

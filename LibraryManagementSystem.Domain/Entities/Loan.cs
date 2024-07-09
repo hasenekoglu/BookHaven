@@ -15,6 +15,6 @@ namespace LibraryManagementSystem.Domain.Entities
         public DateTime? ReturnDate { get; set; }
 
         public Book Books { get; set; }
-        public User User { get; set; }
+     
     }
 }

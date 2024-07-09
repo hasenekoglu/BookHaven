@@ -25,9 +25,6 @@ namespace LibraryManagementSystem.Infrastructure.Configuration
                 .WithMany(b =>b.Loans)
                 .HasForeignKey(l => l.BookId);
 
-            builder.HasOne(l => l.User)
-                .WithMany(u => u.Loans)
-                .HasForeignKey(l => l.UserId);
 
         }
     }
