@@ -1,3 +1,4 @@
+using LibraryManagementSystem.Application.Registration;
 using LibraryManagementSystem.Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddInfrastructureRegistration(builder.Configuration);
+builder.Services.AddApplicationRegistration();
 
 var app = builder.Build();
 
