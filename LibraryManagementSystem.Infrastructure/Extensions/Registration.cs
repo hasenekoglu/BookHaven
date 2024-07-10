@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibraryManagementSystem.Application.Token;
 using LibraryManagementSystem.Domain.Entities.Identity;
 using LibraryManagementSystem.Domain.Interfaces;
 using LibraryManagementSystem.Infrastructure.Data;
+using LibraryManagementSystem.Infrastructure.Helpers.Token;
 using LibraryManagementSystem.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -35,6 +37,8 @@ namespace LibraryManagementSystem.Infrastructure.Extensions
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ILoanRepository, LoanRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<ITokenHandler, TokenHandler>();
+
 
 
             return services;

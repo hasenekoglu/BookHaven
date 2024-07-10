@@ -1,4 +1,5 @@
 ﻿using LibraryManagementSystem.Application.Features.Commands.CreateUser;
+using LibraryManagementSystem.Application.Features.Commands.GoogleLogin;
 using LibraryManagementSystem.Application.Features.Commands.LoginUser;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -30,5 +31,11 @@ namespace LibraryManagementSystem.API.Controllers
             return Ok(response);
         }
 
+        [HttpPost("google-login")]
+        public async Task<IActionResult> GoogleLogin(GoogleLoginCommandRequest googleLoginCommandRequest)
+        {
+            GoogleLoginCommandResponse response = await _mediator.Send(googleLoginCommandRequest);
+            return Ok(response);
+        }
     }
 }

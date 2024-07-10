@@ -1,5 +1,8 @@
+using System.Text;
 using LibraryManagementSystem.Application.Registration;
 using LibraryManagementSystem.Infrastructure.Extensions;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,27 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+#region Authentication
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer("Admin",options =>
+        options.TokenValidationParameters =new()
+        {
+            ValidateAudience = true,               //Oluþturulacak token deðerlerinin kimlerin/hangi originlerin/sitelerin kullanýcý belirlediðimiz deðerdir. www.bilmemne.com
+            ValidateIssuer = true,                //Oluþturulacak token deðerini kimin daðýttýðýný ifade eder www.myapi.com
+            ValidateLifetime = true,             //Oluþturulan token deðerinin süresini kontrol edeceðimiz alandýr.
+            ValidateIssuerSigningKey = true,    //Üretilecek token deðerinin uygulamamýza ait bir deðer olduðunu ifade eden sciry key verisinin doðrulanmasýdýr
+
+
+            ValidAudience = builder.Configuration["Token:Audience"],
+            ValidIssuer = builder.Configuration["Token:Issuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"]))
+
+
+        });
+
+#endregion
 
 
 builder.Services.AddInfrastructureRegistration(builder.Configuration);
@@ -26,6 +50,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

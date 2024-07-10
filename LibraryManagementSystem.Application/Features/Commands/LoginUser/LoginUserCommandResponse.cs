@@ -8,5 +8,14 @@ namespace LibraryManagementSystem.Application.Features.Commands.LoginUser
 {
     public class LoginUserCommandResponse 
     {
+        
+    } 
+    public class LoginUserSuccessCommandResponse : LoginUserCommandResponse
+    {
+        public Dtos.Token Token { get; set; }
+    }
+    public class LoginUserErrorCommandResponse  : LoginUserCommandResponse
+    {
+       public string Message { get; set; }
     }
 }
