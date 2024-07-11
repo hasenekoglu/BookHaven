@@ -33,7 +33,7 @@ namespace LibraryManagementSystem.Infrastructure.Extensions
             services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<LibraryContext>();
 
 
-            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+           // services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ILoanRepository, LoanRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();

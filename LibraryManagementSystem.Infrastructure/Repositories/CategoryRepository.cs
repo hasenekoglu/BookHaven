@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using LibraryManagementSystem.Domain.Entities;
 using LibraryManagementSystem.Domain.Interfaces;
 using LibraryManagementSystem.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementSystem.Infrastructure.Repositories
 {

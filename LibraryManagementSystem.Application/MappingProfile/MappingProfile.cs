@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using LibraryManagementSystem.Application.Dtos;
+using LibraryManagementSystem.Application.Features.Commands.BookCommands.CreateBook;
 using LibraryManagementSystem.Application.Features.Commands.CreateUser;
 using LibraryManagementSystem.Domain.Entities;
 using LibraryManagementSystem.Domain.Entities.Identity;
@@ -17,6 +18,10 @@ namespace LibraryManagementSystem.Application.MappingProfile
         {
             CreateMap<AppUser, CreateUserCommandRequest>().ReverseMap();
 
-          }
+
+            CreateMap<Book, CreateBookCommand>().ReverseMap();
+
+            CreateMap<Book, CreateBookResponse>().ReverseMap();
+        }
     }
 }

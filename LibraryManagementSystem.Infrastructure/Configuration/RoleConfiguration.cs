@@ -14,8 +14,6 @@ namespace LibraryManagementSystem.Infrastructure.Configuration
         public void Configure(EntityTypeBuilder<Role> builder)
         {
 
-   
-
             builder.Property(r => r.Name)
                 .IsRequired()
                 .HasMaxLength(50);

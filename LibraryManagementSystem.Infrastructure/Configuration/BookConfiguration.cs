@@ -34,7 +34,7 @@ namespace LibraryManagementSystem.Infrastructure.Configuration
 
             builder.HasOne(b => b.Category)
                 .WithMany(c => c.Books)
-                .HasForeignKey(b => b.CategoryId);
+                .HasForeignKey(b => b.CategoryId).OnDelete(DeleteBehavior.SetNull);
         }
     }
 }

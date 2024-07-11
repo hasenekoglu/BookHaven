@@ -4,18 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Domain.Entities
+namespace LibraryManagementSystem.Application.Features.Commands.BookCommands.CreateBook
 {
-    public class Book : BaseEntity
+    public class CreateBookResponse
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
         public string ISBN { get; set; }
-        public DateTime PublishedDate { get; set; }
-        public Guid? CategoryId { get; set; }
-
-        public ICollection<Loan> Loans { get; set; }
-        public Category Category { get; set; }
+        public string CategoryName { get; set; }
     }
 }
