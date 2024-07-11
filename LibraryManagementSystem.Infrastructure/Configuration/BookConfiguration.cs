@@ -9,15 +9,32 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LibraryManagementSystem.Infrastructure.Configuration
 {
-    public class BookConfiguration : IEntityTypeConfiguration<Book>
+    public class BookConfiguration : BaseEntityConfiguration<Book>
     {
         public void Configure(EntityTypeBuilder<Book> builder)
         {
-            
-            builder.HasKey(b => b.Id);
-            builder.Property(b => b.Category).IsRequired().HasMaxLength(255);
-            builder.Property(b => b.Author).IsRequired().HasMaxLength(255);
-            builder.Property(b => b.ISBN).IsRequired().HasMaxLength(13);
+            builder.Property(b => b.Name)
+                .IsRequired()
+                .HasMaxLength(200);
+
+            builder.Property(b => b.Title)
+                .IsRequired()
+                .HasMaxLength(200);
+
+            builder.Property(b => b.Author)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            builder.Property(b => b.PublishedDate)
+                .IsRequired();
+
+            builder.Property(b => b.ISBN)
+                .IsRequired()
+                .HasMaxLength(13);
+
+            builder.HasOne(b => b.Category)
+                .WithMany(c => c.Books)
+                .HasForeignKey(b => b.CategoryId);
         }
     }
 }

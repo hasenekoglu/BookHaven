@@ -9,16 +9,18 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LibraryManagementSystem.Infrastructure.Configuration
 {
-    public class RoleConfiguration : BaseEntityConfiguration<Role>
+    public class CategoryConfiguration :BaseEntityConfiguration<Category>
     {
-        public void Configure(EntityTypeBuilder<Role> builder)
+        public void Configure(EntityTypeBuilder<Category> builder)
         {
 
-   
-
-            builder.Property(r => r.Name)
+            builder.Property(c => c.Name)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(100);
+
+            builder.HasMany(c => c.Books)
+                .WithOne(b => b.Category)
+                .HasForeignKey(b => b.CategoryId);
         }
     }
 }

@@ -22,6 +22,7 @@ namespace LibraryManagementSystem.Infrastructure.Data
         public DbSet<Book> Books { get; set; }
         public DbSet<Loan> Loans { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<Category> Category { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

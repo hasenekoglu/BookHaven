@@ -15,7 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Queries\" />
+    <Folder Include="Features\Commands\BookCommands\CreateBook\" />
+    <Folder Include="Features\Commands\BookCommands\DeleteBook\" />
+    <Folder Include="Features\Commands\BookCommands\UpdateBook\" />
+    <Folder Include="Features\Queries\BookQueries\GetAllBooksQuery\" />
+    <Folder Include="Features\Queries\BookQueries\GetBookIdQuery\" />
   </ItemGroup>
 
   <PropertyGroup>

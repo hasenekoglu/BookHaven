@@ -9,16 +9,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LibraryManagementSystem.Infrastructure.Configuration
 {
-    public class RoleConfiguration : BaseEntityConfiguration<Role>
+    public  abstract class BaseEntityConfiguration <T> : IEntityTypeConfiguration<T> where T : BaseEntity 
     {
-        public void Configure(EntityTypeBuilder<Role> builder)
+        public void Configure(EntityTypeBuilder<T> builder)
         {
-
-   
-
-            builder.Property(r => r.Name)
-                .IsRequired()
-                .HasMaxLength(50);
+            builder.HasKey(i => i.Id);
+            builder.Property(i => i.Id).ValueGeneratedOnAdd();
+            builder.Property(i => i.CreateDate).ValueGeneratedOnAdd();
         }
     }
 }

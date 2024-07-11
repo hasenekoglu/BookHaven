@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Domain.Entities
 {
-    public class Book
+    public class Book : BaseEntity
     {
-        public int Id { get; set; }
-        public string Category { get; set; }
+        public string Name { get; set; }
+        public string Title { get; set; }
         public string Author { get; set; }
         public string ISBN { get; set; }
         public DateTime PublishedDate { get; set; }
+        public Guid CategoryId { get; set; }
 
         public ICollection<Loan> Loans { get; set; }
+        public Category Category { get; set; }
     }
 }

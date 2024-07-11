@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Domain.Entities
 {
-    public class Role : BaseEntity
+    public abstract class BaseEntity
     {
-        public string Name { get; set; }
+        public Guid Id { get; set; }
+        public DateTime  CreateDate { get; set; }
     }
 }

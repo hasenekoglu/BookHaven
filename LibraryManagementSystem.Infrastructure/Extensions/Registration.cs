@@ -37,6 +37,7 @@ namespace LibraryManagementSystem.Infrastructure.Extensions
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ILoanRepository, LoanRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ITokenHandler, TokenHandler>();
 
 

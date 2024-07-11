@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LibraryManagementSystem.Infrastructure.Configuration
 {
-    public class LoanConfiguration : IEntityTypeConfiguration<Loan>
+    public class LoanConfiguration : BaseEntityConfiguration<Loan>
     {
         public void Configure(EntityTypeBuilder<Loan> builder)
         {
-            builder.HasKey(l => l.Id);
+            
 
             builder.Property(l => l.LoanDate)
                 .IsRequired();
