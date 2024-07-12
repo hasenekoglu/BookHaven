@@ -14,13 +14,6 @@
     <ProjectReference Include="..\LibraryManagementSystem.Domain\LibraryManagementSystem.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Commands\BookCommands\DeleteBook\" />
-    <Folder Include="Features\Commands\BookCommands\UpdateBook\" />
-    <Folder Include="Features\Queries\BookQueries\GetAllBooksQuery\" />
-    <Folder Include="Features\Queries\BookQueries\GetBookIdQuery\" />
-  </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
