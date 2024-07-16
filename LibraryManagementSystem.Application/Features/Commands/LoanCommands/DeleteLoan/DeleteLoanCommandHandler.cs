@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using LibraryManagementSystem.Domain.Interfaces;
+using LibraryManagementSystem.Application.Interfaces;
 using MediatR;
 
 namespace LibraryManagementSystem.Application.Features.Commands.LoanCommands.DeleteLoan;

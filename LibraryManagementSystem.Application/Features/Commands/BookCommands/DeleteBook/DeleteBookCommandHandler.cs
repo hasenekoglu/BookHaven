@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
+using LibraryManagementSystem.Application.Interfaces;
 using LibraryManagementSystem.Domain.Entities;
-using LibraryManagementSystem.Domain.Interfaces;
+
 using MediatR;
 
 namespace LibraryManagementSystem.Application.Features.Commands.BookCommands.DeleteBook

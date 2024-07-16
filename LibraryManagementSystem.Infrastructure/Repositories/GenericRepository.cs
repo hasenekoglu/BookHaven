@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibraryManagementSystem.Domain.Interfaces;
+
 using System.Linq.Expressions;
+using LibraryManagementSystem.Application.Interfaces;
 using LibraryManagementSystem.Domain.Entities;
 
 namespace LibraryManagementSystem.Infrastructure.Repositories

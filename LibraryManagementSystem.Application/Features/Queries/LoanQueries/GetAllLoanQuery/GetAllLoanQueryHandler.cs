@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using LibraryManagementSystem.Application.Interfaces;
 using LibraryManagementSystem.Domain.Entities.Identity;
-using LibraryManagementSystem.Domain.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
