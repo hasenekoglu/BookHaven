@@ -12,11 +12,12 @@ namespace LibraryManagementSystem.Domain.Entities
     {
         
         public Guid BookId { get; set; }
-        public int UserId { get; set; }
         public DateTime LoanDate { get; set; }
+        public string UserName { get; set; }
         public DateTime? ReturnDate { get; set; }
 
         public Book Books { get; set; }
+        
      
 
      

@@ -8,6 +8,7 @@ public class UpdateBookCommandHandler :IRequestHandler<UpdateBookCommand,UpdateB
 {
     private readonly IBookRepository _bookRepository;
     private readonly IMapper _mapper;
+    private readonly ICategoryRepository _categoryRepository;
 
     public UpdateBookCommandHandler(IMapper mapper, IBookRepository bookRepository)
     {
@@ -21,6 +22,8 @@ public class UpdateBookCommandHandler :IRequestHandler<UpdateBookCommand,UpdateB
         book = _mapper.Map(request, book);
         await _bookRepository.UpdateAsync(book);
         var response = _mapper.Map<UpdateBookResponse>(book);
+        var category = await _categoryRepository.GetByIdAsync(request.CategoryId.Value);
+        response.CategoryName = category.Name;
         return response;
 
     }
