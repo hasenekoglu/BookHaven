@@ -9,6 +9,11 @@ namespace LibraryManagementSystem.Application.Features.Commands.CategoryCommands
 {
     public class DeleteCategoryCommand :IRequest<DeleteCategoryResponse>
     {
+        public DeleteCategoryCommand(Guid id)
+        {
+            Id = id;
+        }
+
         public Guid  Id { get; set; }
     }
 }

@@ -8,5 +8,6 @@ public class GetByIdBookResponse
     public string Author { get; set; }
     public string ISBN { get; set; }
     public DateTime PublishedDate { get; set; }
-    public Guid? CategoryId { get; set; }
+    public Guid? CategoryId { get; set; } = Guid.Empty;
+    public string CategoryName { get; set; } = string.Empty;
 }

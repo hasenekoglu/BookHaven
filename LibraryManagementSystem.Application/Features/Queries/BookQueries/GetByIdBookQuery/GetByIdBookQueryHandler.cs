@@ -10,11 +10,13 @@ public class GetByIdBookQueryHandler : IRequestHandler<GetByIdBookQuery,GetByIdB
 {
     private readonly IBookRepository _bookRepository;
     private readonly IMapper _mapper;
+    private readonly ICategoryRepository _categoryRepository;
 
-    public GetByIdBookQueryHandler(IMapper mapper, IBookRepository bookRepository)
+    public GetByIdBookQueryHandler(IMapper mapper, IBookRepository bookRepository, ICategoryRepository categoryRepository)
     {
         _mapper = mapper;
         _bookRepository = bookRepository;
+        _categoryRepository = categoryRepository;
     }
 
     public async Task<GetByIdBookResponse> Handle(GetByIdBookQuery request, CancellationToken cancellationToken)
@@ -24,6 +26,13 @@ public class GetByIdBookQueryHandler : IRequestHandler<GetByIdBookQuery,GetByIdB
             throw new DatabaseValidationException("Kitap bulunamadı!");
 
         GetByIdBookResponse response = _mapper.Map<GetByIdBookResponse>(book);
+        if (response.CategoryId is not null)
+        {
+            var category = await _categoryRepository.GetByIdAsync(response.CategoryId.Value);
+            category.Name = response.Name;
+        }
+
+
         return response;
 
     }

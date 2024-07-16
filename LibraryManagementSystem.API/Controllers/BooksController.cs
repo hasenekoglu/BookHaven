@@ -39,7 +39,7 @@ namespace LibraryManagementSystem.API.Controllers
         public async Task<IActionResult> DeleteBook([FromRoute] Guid id)
         {
            DeleteBookResponse response = await _mediator.Send(new DeleteBookCommand(id));
-            return Ok($"{response} Başarıyla kaldırıldı");
+            return Ok($"{response.Id} Başarıyla kaldırıldı");
         }
 
         [HttpGet]

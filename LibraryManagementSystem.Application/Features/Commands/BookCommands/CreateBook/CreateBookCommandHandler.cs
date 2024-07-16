@@ -24,6 +24,7 @@ public class CreateBookCommandHandler : IRequestHandler<CreateBookCommand, Creat
         await _bookRepository.AddAsync(book);
         
         CreateBookResponse createBookResponse = _mapper.Map<CreateBookResponse>(book);
+     
         return createBookResponse;
 
     }

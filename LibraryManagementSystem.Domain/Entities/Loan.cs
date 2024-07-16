@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibraryManagementSystem.Domain.Entities.Identity;
 
 namespace LibraryManagementSystem.Domain.Entities
 {
@@ -15,6 +17,8 @@ namespace LibraryManagementSystem.Domain.Entities
         public DateTime? ReturnDate { get; set; }
 
         public Book Books { get; set; }
+     
+
      
     }
 }
