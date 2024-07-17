@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.API", "LibraryManagementSystem.API\LibraryManagementSystem.API.csproj", "{9E4E44DC-E084-4755-BF44-0F659AE4A301}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.API", "LibraryManagementSystem.API\LibraryManagementSystem.API.csproj", "{9E4E44DC-E084-4755-BF44-0F659AE4A301}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Application", "LibraryManagementSystem.Application\LibraryManagementSystem.Application.csproj", "{45881091-81FD-45DE-AD4B-18295FD2D22C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Application", "LibraryManagementSystem.Application\LibraryManagementSystem.Application.csproj", "{45881091-81FD-45DE-AD4B-18295FD2D22C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Domain", "LibraryManagementSystem.Domain\LibraryManagementSystem.Domain.csproj", "{693EFA2F-B3A0-477A-AB82-B62B05731D27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Domain", "LibraryManagementSystem.Domain\LibraryManagementSystem.Domain.csproj", "{693EFA2F-B3A0-477A-AB82-B62B05731D27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Infrastructure", "LibraryManagementSystem.Infrastructure\LibraryManagementSystem.Infrastructure.csproj", "{5060EC2D-B875-4103-A0CF-DF58DA242DD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Infrastructure", "LibraryManagementSystem.Infrastructure\LibraryManagementSystem.Infrastructure.csproj", "{5060EC2D-B875-4103-A0CF-DF58DA242DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.WebApp", "LibraryManagementSystem.WebApp\LibraryManagementSystem.WebApp.csproj", "{FE56FAA5-ABBE-46AF-87F1-8A38FE3F8DA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5060EC2D-B875-4103-A0CF-DF58DA242DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5060EC2D-B875-4103-A0CF-DF58DA242DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5060EC2D-B875-4103-A0CF-DF58DA242DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE56FAA5-ABBE-46AF-87F1-8A38FE3F8DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE56FAA5-ABBE-46AF-87F1-8A38FE3F8DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE56FAA5-ABBE-46AF-87F1-8A38FE3F8DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE56FAA5-ABBE-46AF-87F1-8A38FE3F8DA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
