@@ -7,7 +7,7 @@ using MediatR;
 
 namespace LibraryManagementSystem.Application.Features.Queries.BookQueries.GetAllBooksQuery
 {
-    public class GetAllBooksQuery :IRequest<List<GetlAllBooksResponse>>
+    public class GetAllBooksQuery :IRequest<List<GetAllBooksResponse>>
     {
     }
 }

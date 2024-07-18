@@ -5,7 +5,7 @@ using MediatR;
 
 namespace LibraryManagementSystem.Application.Features.Queries.BookQueries.GetAllBooksQuery;
 
-public class GetAllBooksQueryHandler : IRequestHandler<GetAllBooksQuery, List<GetlAllBooksResponse>>
+public class GetAllBooksQueryHandler : IRequestHandler<GetAllBooksQuery, List<GetAllBooksResponse>>
 {
     private readonly IBookRepository _bookRepository;
     private readonly ICategoryRepository _categoryRepository;
@@ -19,10 +19,10 @@ public class GetAllBooksQueryHandler : IRequestHandler<GetAllBooksQuery, List<Ge
         _categoryRepository = categoryRepository;
     }
 
-    public async Task<List<GetlAllBooksResponse>> Handle(GetAllBooksQuery request, CancellationToken cancellationToken)
+    public async Task<List<GetAllBooksResponse>> Handle(GetAllBooksQuery request, CancellationToken cancellationToken)
     {
         var values = await _bookRepository.GetAll();
-        var response = _mapper.Map<List<GetlAllBooksResponse>>(values);
+        var response = _mapper.Map<List<GetAllBooksResponse>>(values);
 
         foreach (var booksResponse in response)
         {

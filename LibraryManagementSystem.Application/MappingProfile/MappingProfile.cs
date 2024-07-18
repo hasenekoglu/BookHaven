@@ -46,7 +46,7 @@ namespace LibraryManagementSystem.Application.MappingProfile
             CreateMap<Book, GetByIdBookResponse>().ReverseMap();
             
             CreateMap<Book, GetAllBooksQuery>().ReverseMap();
-            CreateMap<Book, GetlAllBooksResponse>().ReverseMap();
+            CreateMap<Book, GetAllBooksResponse>().ReverseMap();
 
 
 
