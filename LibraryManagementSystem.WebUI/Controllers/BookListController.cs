@@ -2,12 +2,15 @@
 
 namespace LibraryManagementSystem.WebUI.Controllers
 {
-    public class DefaultController : Controller
+    public class BookListController : Controller
     {
         public IActionResult Index()
         {
-            var user = User.Claims;
-            int  x;
+            return View();
+        }
+
+        public IActionResult BookDetail()
+        {
             return View();
         }
     }
