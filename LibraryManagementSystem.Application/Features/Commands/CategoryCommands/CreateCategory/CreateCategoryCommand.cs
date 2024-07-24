@@ -10,5 +10,6 @@ namespace LibraryManagementSystem.Application.Features.Commands.CategoryCommands
     public class CreateCategoryCommand : IRequest<CreateCategoryResponse>
     {
         public string Name { get; set; }
+        public string ImageURL { get; set; }
     }
 }

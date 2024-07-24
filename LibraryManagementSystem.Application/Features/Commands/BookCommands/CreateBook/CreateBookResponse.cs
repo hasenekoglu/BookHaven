@@ -14,5 +14,6 @@ namespace LibraryManagementSystem.Application.Features.Commands.BookCommands.Cre
         public string Author { get; set; }
         public string ISBN { get; set; }
         public string CategoryName { get; set; }
+        public string ImageURL { get; set; }
     }
 }

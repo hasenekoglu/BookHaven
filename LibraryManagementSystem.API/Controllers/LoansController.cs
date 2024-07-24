@@ -4,7 +4,6 @@ using LibraryManagementSystem.Application.Features.Commands.LoanCommands.UpdateL
 using LibraryManagementSystem.Application.Features.Queries.LoanQueries.GetAllLoanQuery;
 using LibraryManagementSystem.Application.Features.Queries.LoanQueries.GetByIdLoanQuery;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryManagementSystem.API.Controllers

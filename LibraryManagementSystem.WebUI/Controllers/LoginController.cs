@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Text.Json;
+using Newtonsoft.Json.Serialization;
+using JsonSerializer = Newtonsoft.Json.JsonSerializer;
 
 namespace LibraryManagementSystem.WebUI.Controllers
 {
@@ -24,6 +26,7 @@ namespace LibraryManagementSystem.WebUI.Controllers
         }
 
         [HttpPost]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Index(LoginUserCommandRequest request)
         {
             var client = _httpClientFactory.CreateClient();
@@ -31,13 +34,23 @@ namespace LibraryManagementSystem.WebUI.Controllers
             StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
             var responseMessage = await client.PostAsync("https://localhost:5001/api/Users/Login", content);
 
+           
             if (responseMessage.IsSuccessStatusCode)
             {
                 var json = await responseMessage.Content.ReadAsStringAsync();
-                var response = System.Text.Json.JsonSerializer.Deserialize<LoginUserCommandResponse>(json, new JsonSerializerOptions
+
+                // Log JSON yanıtı
+                System.Diagnostics.Debug.WriteLine("JSON Response: " + json);
+
+                // Newtonsoft.Json kullanarak deserialize işlemi
+                var response = JsonConvert.DeserializeObject<LoginUserCommandResponse>(json, new JsonSerializerSettings
                 {
-                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                    TypeNameHandling = TypeNameHandling.Auto,
+                    SerializationBinder = new DefaultSerializationBinder()
                 });
+
+                // Log yanıt türü
+                System.Diagnostics.Debug.WriteLine("Response Type: " + response.GetType().Name);
 
                 if (response is LoginUserSuccessCommandResponse successResponse)
                 {

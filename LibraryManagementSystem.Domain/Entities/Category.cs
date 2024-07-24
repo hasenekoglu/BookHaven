@@ -10,6 +10,7 @@ namespace LibraryManagementSystem.Domain.Entities
     {
        
         public string Name { get; set; }
+        public string ImageURL { get; set; } = "https://static.thenounproject.com/png/101469-200.png";
         public ICollection<Book> Books { get; set; }
     }
 }

@@ -14,6 +14,8 @@ namespace LibraryManagementSystem.Domain.Entities
         public string ISBN { get; set; }
         public DateTime PublishedDate { get; set; }
         public Guid? CategoryId { get; set; }
+        public string? ImageURL { get; set; } = "https://birkhauser.com/product-not-found.png";
+
 
         public ICollection<Loan> Loans { get; set; }
         public Category Category { get; set; }

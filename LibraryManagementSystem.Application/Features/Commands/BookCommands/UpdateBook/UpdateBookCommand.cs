@@ -15,5 +15,6 @@ namespace LibraryManagementSystem.Application.Features.Commands.BookCommands.Upd
         public string Author { get; set; }
         public string ISBN { get; set; }
         public Guid? CategoryId { get; set; }
+        public string? ImageURL { get; set; }
     }
 }

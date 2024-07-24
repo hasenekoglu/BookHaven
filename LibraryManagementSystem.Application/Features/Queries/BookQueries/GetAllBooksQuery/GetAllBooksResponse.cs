@@ -10,4 +10,5 @@ public class GetAllBooksResponse
     public DateTime PublishedDate { get; set; }
     public Guid? CategoryId { get; set; } = Guid.Empty;
     public string CategoryName { get; set; } = string.Empty;
+    public string? ImageURL { get; set; } = string.Empty;
 }

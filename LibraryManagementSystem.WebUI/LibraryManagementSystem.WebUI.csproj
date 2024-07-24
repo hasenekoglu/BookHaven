@@ -14,13 +14,121 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <None Include="wwwroot\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.esm.js" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\bootstrap\LICENSE" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\help-documentation\assets\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\help-documentation\assets\blueprint-css\plugins\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\app\et-line-font\fonts\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\app\et-line-font\fonts\et-line.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\app\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\bootstrap\css\bootstrap-theme.min.css.map" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\charts\et-line-font\fonts\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\charts\et-line-font\fonts\et-line.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\charts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\component\et-line-font\fonts\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\component\et-line-font\fonts\et-line.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\component\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\dist\et-line-font\fonts\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\dist\et-line-font\fonts\et-line.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\dist\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\dist\js\jquery.min.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\dist\js\ovio.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\dist\weather\font\weathericons-regular-webfont.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\dist\weather\font\weathericons-regular-webfont.woff2" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\forms\et-line-font\fonts\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\forms\et-line-font\fonts\et-line.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\forms\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\maps\et-line-font\fonts\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\maps\et-line-font\fonts\et-line.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\maps\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\pages\et-line-font\fonts\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\pages\et-line-font\fonts\et-line.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\pages\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\calendar\fullcalendar.min.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\calendar\jquery.min.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\calendar\moment.min.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\3d-chart-functions.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\area-chart-functions.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\bar-chart-functions.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\bubble-chart-functions.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\chart-functions.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\code\highcharts-3d.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\code\highcharts-more.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\code\highcharts.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\code\modules\exporting.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\comb-chart-functions.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\line-chart-functions.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\charts\pie-chart-functions.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\countdown\countdown.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\countdown\custom.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\countdown\jquery.countdown.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\countdown\jquery.min.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\countdown\simplyCountdown.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\countdown\vegas\jquery.vegas.min.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\cubeportfolio\jquery-latest.min.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\cubeportfolio\jquery.cubeportfolio.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\cubeportfolio\jquery.cubeportfolio.min.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\cubeportfolio\main.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\maps\jquery.mapael.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\maps\world_countries.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\maps\world_countries_mercator.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\maps\world_countries_miller.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\stepform\jq.stepform.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\plugins\tables\jquery.tablesort.js" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\tables\et-line-font\fonts\.DS_Store" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\tables\et-line-font\fonts\et-line.svg" />
+    <None Include="wwwroot\MainDownload-OvioAdmin-html5-template\html\tables\font-awesome\fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.7.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LibraryManagementSystem.Application\LibraryManagementSystem.Application.csproj" />
+    <ProjectReference Include="..\LibraryManagementSystem.Dto\LibraryManagementSystem.Dto.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
 </Project>

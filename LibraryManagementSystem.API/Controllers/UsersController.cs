@@ -1,6 +1,7 @@
 ﻿using LibraryManagementSystem.Application.Features.Commands.CreateUser;
 using LibraryManagementSystem.Application.Features.Commands.GoogleLogin;
 using LibraryManagementSystem.Application.Features.Commands.LoginUser;
+
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,9 +14,11 @@ namespace LibraryManagementSystem.API.Controllers
     {
         private readonly IMediator _mediator;
 
+
         public UsersController(IMediator mediator)
         {
             _mediator = mediator;
+           
         }
         [HttpPost]
         public async Task<IActionResult> Create(CreateUserCommandRequest createUserCommandRequest)

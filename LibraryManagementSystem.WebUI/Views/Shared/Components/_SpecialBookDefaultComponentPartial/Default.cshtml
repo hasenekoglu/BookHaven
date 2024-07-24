@@ -1,16 +1,17 @@
-﻿<div class="col-lg-4">
+﻿@model List<LibraryManagementSystem.Dto.BookDtos.ResultBookDetailsDto>
+
+
+<div class="col-lg-4">
+@foreach (var item in Model)
+{
     <div class="product-offer mb-30" style="height: 200px;">
-        <img class="img-fluid" src="~/online-shop-website-template/img/offer-1.jpg" alt="">
+        <img class="img-fluid" src= @item.ImageURL alt="">
         <div class="offer-text">
-            <h3 class="text-white mb-3">Editörün Seçtikleri</h3>
+            <h6 class="text-white text-uppercase">@item.Name</h6>
+            <h3 class="text-white mb-3">@item.Author</h3>
             <a href="" class="btn btn-primary">Göz At</a>
         </div>
     </div>
-    <div class="product-offer mb-30" style="height: 200px;">
-        <img class="img-fluid" src="~/online-shop-website-template/img/offer-2.jpg" alt="">
-        <div class="offer-text">
-            <h3 class="text-white mb-3">Editörün Seçtikleri</h3>
-            <a href="" class="btn btn-primary">Göz At</a>
-        </div>
-    </div>
+}
+
 </div>

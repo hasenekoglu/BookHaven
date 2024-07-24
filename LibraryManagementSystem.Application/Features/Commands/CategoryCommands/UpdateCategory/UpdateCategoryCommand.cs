@@ -11,6 +11,7 @@ namespace LibraryManagementSystem.Application.Features.Commands.CategoryCommands
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
+        public string ImageURL { get; set; }
     }
 }
 
