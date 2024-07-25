@@ -1,5 +1,4 @@
-﻿@using LibraryManagementSystem.Application.Features.Queries.BookQueries.GetAllBooksQuery
-@model List<LibraryManagementSystem.Dto.BookDtos.ResultBookDetailsDto>
+﻿@model List<LibraryManagementSystem.Dto.BookDtos.ResultBookDetailsDto>
 @{
     Random rnd = new Random();
     var shuffledProducts = Model.OrderBy(x => rnd.Next()).ToList();

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Dto.CategoryDtos
 {
-    public class CategoriesDto
+    public class ResultCategoryDto
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string ImageURL { get; set; }
     }

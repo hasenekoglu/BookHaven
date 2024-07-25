@@ -127,8 +127,4 @@
     <ProjectReference Include="..\LibraryManagementSystem.Dto\LibraryManagementSystem.Dto.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Models\" />
-  </ItemGroup>
-
 </Project>
