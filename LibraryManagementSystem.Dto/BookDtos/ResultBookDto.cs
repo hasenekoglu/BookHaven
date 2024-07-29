@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Dto.BookDtos
 {
-    public class ResultBookDetailsDto
+    public class ResultBookDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
@@ -14,8 +14,8 @@ namespace LibraryManagementSystem.Dto.BookDtos
         public string Author { get; set; }
         public string ISBN { get; set; }
         public DateTime PublishedDate { get; set; }
-        public string CategoryName { get; set; }
-        public string? ImageURL { get; set; }
+        public Guid? CategoryId { get; set; }
+        public string? ImageURL { get; set; } 
 
     }
 }

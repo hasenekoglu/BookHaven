@@ -11,10 +11,11 @@ public class UpdateBookCommandHandler :IRequestHandler<UpdateBookCommand,UpdateB
     private readonly IMapper _mapper;
     private readonly ICategoryRepository _categoryRepository;
 
-    public UpdateBookCommandHandler(IMapper mapper, IBookRepository bookRepository)
+    public UpdateBookCommandHandler(IMapper mapper, IBookRepository bookRepository, ICategoryRepository categoryRepository)
     {
         _mapper = mapper;
         _bookRepository = bookRepository;
+        _categoryRepository = categoryRepository;
     }
 
     public async Task<UpdateBookResponse> Handle(UpdateBookCommand request, CancellationToken cancellationToken)

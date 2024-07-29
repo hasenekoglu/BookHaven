@@ -1,0 +1,39 @@
+﻿@model LibraryManagementSystem.Dto.BookDtos.UpdateBookDto
+@{
+    ViewData["Title"] = "UpdateBook";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <h4>Kitap Güncelleme Sayfası</h4>
+                <div class="bs-example" data-example-id="bordered-table">
+                    <form method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <label>Kitap Adı</label>
+                        <input type="text" class="form-control" asp-for="Name"/>
+                        <br/>
+                        <label>Kitap Yazarı</label>
+                        <input type="text" class="form-control" asp-for="Author"/>
+                        <br/>
+                        <label>Kitap Açıklaması</label>
+                        <textarea class="form-control" asp-for="Title" rows="5"></textarea>
+                        <br/>
+                        <label>Kitap Kategorisi</label>
+                        @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.CategoryValues, new { @class = "form-control" })
+                        <label>Kitap Barkodu</label>
+                        <input type="text" class="form-control" asp-for="ISBN"/>
+                        <br/>
+                        <label>Kitap Resmi</label>
+                        <input type="text" class="form-control" asp-for="ImageURL"/>
+                        <br/>
+                        <button class="btn btn-primary">Kitabı Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
