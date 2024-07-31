@@ -19,18 +19,18 @@ namespace LibraryManagementSystem.WebUI.Controllers
             return View();
         }
        //[Route("Index/{id}")]
-        [HttpGet]
-        public async Task<IActionResult> BookDetail(int id)
+      
+        public async Task<IActionResult> BookDetail()
         {
-            ViewBag.bookid = id;
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:5001/api/Books/?id="+id);
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<ResultBookDetailsDto>(jsonData);
-                return View(values);
-            }
+            //ViewBag.bookid = id;
+            //var client = _httpClientFactory.CreateClient();
+            //var responseMessage = await client.GetAsync("https://localhost:5001/api/Books/?id="+id);
+            //if (responseMessage.IsSuccessStatusCode)
+            //{
+            //    var jsonData = await responseMessage.Content.ReadAsStringAsync();
+            //    var values = JsonConvert.DeserializeObject<ResultBookDetailsDto>(jsonData);
+            //    return View(values);
+            //}
             return View();
         }
     }
